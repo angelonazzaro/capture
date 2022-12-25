@@ -1,8 +1,19 @@
+import styled from 'styled-components';
+import Movie from '../components/Movie';
 
-function OurWork() {
+function OurWork({movies}) { 
     return (
-        <div></div>
+        <Work>
+            {movies.map((movie) => <Movie key={movie.url} title={movie.title} cover={movie.mainImg} url={movie.url} />)}
+        </Work>
     );
 }
+
+const Work = styled.div`
+    min-height: 100vh;
+    overflow: hidden;
+
+    padding: 5rem 10rem; 
+`;
 
 export default OurWork;
