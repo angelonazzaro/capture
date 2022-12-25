@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import GlobalStyle from "./components/GlobalStyle";
 import Nav from "./components/Nav";
@@ -10,21 +10,26 @@ import ContactUs from "./pages/ContactUs";
 import MovieDetails from './pages/MovieDetails';
 import { MovieState } from './movieState';
 
+import { AnimatePresence } from 'framer-motion';
+
 function App() {
 
   const movies = useState(MovieState)[0]; // get the actual data
+  const location = useLocation(); 
 
   return (
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <Routes>
-        <Route path="/" exact element={<AboutUs />} />
-        <Route path="/aboutus" exact element={<AboutUs />} />
-        <Route path="/work" exact element={<OurWork movies={movies} />} />
-        <Route path="/work/:id" element={<MovieDetails movies={movies}/>} />
-        <Route path="/contactus" exact element={<ContactUs />} />
-      </Routes>
+      <AnimatePresence exitBeforeEnter>
+          <Routes location={location} key={location.key}>
+            <Route path="/" exact element={<AboutUs />} />
+            <Route path="/aboutus" exact element={<AboutUs />} />
+            <Route path="/work" exact element={<OurWork movies={movies} />} />
+            <Route path="/work/:id" element={<MovieDetails movies={movies}/>} />
+            <Route path="/contactus" exact element={<ContactUs />} />
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 }

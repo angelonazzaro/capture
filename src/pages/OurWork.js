@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 import Movie from '../components/Movie';
 
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
+
 function OurWork({movies}) { 
     return (
-        <Work>
+        <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
             {movies.map((movie) => <Movie key={movie.url} title={movie.title} cover={movie.mainImg} url={movie.url} />)}
         </Work>
     );
 }
 
-const Work = styled.div`
+const Work = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
 
