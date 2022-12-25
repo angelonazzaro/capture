@@ -4,12 +4,15 @@ import money from '../img/money.svg';
 import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
 
+import styled from 'styled-components';
+import { Layout, Description, Image } from '../styles';
+
 function ServicesSection() {
     return (
-        <div className="services">
-            <div className="description">
+        <Services>
+            <Description>
                 <h2>High <span>quality</span> services</h2>
-                <div className="cards">
+                <Cards>
                     <div className="card">
                         <div className="icon">
                             <img src={clock} alt="clock" />
@@ -38,13 +41,46 @@ function ServicesSection() {
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
-                </div>
-            </div>
-            <div className="image">
+                </Cards>
+            </Description>
+            <Image>
                 <img src={home2} alt="Services Home" />
-            </div>
-        </div>
+            </Image>
+        </Services>
     ); 
 }
+
+// This copies everything from the Layout styled component and lets you customize it 
+const Services = styled(Layout)`
+    h2 {
+        padding-bottom: 5rem; 
+    }
+
+    p {
+        width: 70%; 
+        padding: 2rem 0 4rem 0;
+    }
+`;
+
+const Cards = styled.div`
+    display: flex; 
+    flex-wrap: wrap; 
+
+    .card {
+        flex-basis: 20rem; 
+
+        .icon {
+            display: flex;
+            align-items: center;
+
+            h3 {
+                margin-left: 1rem;
+                background-color: white;
+                color: black;
+                padding: 1rem;
+            }
+        }
+    }
+`;
 
 export default ServicesSection;
