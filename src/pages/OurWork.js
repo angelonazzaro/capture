@@ -23,6 +23,10 @@ const Work = styled(motion.div)`
     overflow: hidden;
 
     padding: 5rem 10rem; 
+
+    @media (max-width: 1300px) {
+        padding: 2rem 2rem;
+    }
 `;
 
 // Frame Animation
