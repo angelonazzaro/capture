@@ -5,6 +5,8 @@ import { Layout, Description, Hide, Image } from '../styles';
 import { motion } from 'framer-motion'; 
 import { pageAnimation, titleAnimation, fadeAnimation, photoAnimation } from '../animation';
 
+import Wave from './Wave';
+
 function AboutSection() {
 
     return (
@@ -32,6 +34,7 @@ function AboutSection() {
             <Image>
                 <motion.img variants={photoAnimation} src={home1} alt="guy with a camera" />
             </Image>
+            <Wave />
         </Layout>
     );
 }
