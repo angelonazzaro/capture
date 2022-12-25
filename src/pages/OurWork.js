@@ -6,7 +6,7 @@ import { pageAnimation } from "../animation";
 
 function OurWork({movies}) { 
     return (
-        <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
+        <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit" style={{backgroundColor: "white"}}>
             {movies.map((movie) => <Movie key={movie.url} title={movie.title} cover={movie.mainImg} url={movie.url} />)}
         </Work>
     );
