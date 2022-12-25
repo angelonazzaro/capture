@@ -80,3 +80,33 @@ export const MovieState = () => {
     },
   ];
 };
+
+
+export const FAQState = () => {
+  return [
+    {
+      id: 1,
+      title: "How do I start?",
+      answer: "Lorem ipsum dolor sit amet.",
+      isOpen: false
+    },
+    {
+      id: 2,
+      title: "Daily Schedule",
+      answer: "Lorem ipsum dolor sit amet.",
+      isOpen: false
+    },
+    {
+      id: 3,
+      title: "Different Payment Methods",
+      answer: "Lorem ipsum dolor sit amet.",
+      isOpen: false
+    },
+    {
+      id: 4,
+      title: "What products do you offer?",
+      answer: "Lorem ipsum dolor sit amet.",
+      isOpen: false
+    }
+  ];
+}

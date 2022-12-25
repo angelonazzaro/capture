@@ -8,7 +8,7 @@ import AboutUs from "./pages/AboutUs";
 import OurWork from "./pages/OurWork";
 import ContactUs from "./pages/ContactUs";
 import MovieDetails from './pages/MovieDetails';
-import { MovieState } from './movieState';
+import { MovieState } from './data';
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence mode="wait">
           <Routes location={location} key={location.key}>
             <Route path="/" exact element={<AboutUs />} />
             <Route path="/aboutus" exact element={<AboutUs />} />

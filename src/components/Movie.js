@@ -1,13 +1,18 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
+import { motion } from "framer-motion";
+import { fadeAnimation, photoAnimation, lineAnimation } from "../animation";
+
 function Movie({title, cover, url}) {
     return (
         <StyledMovie>
-            <h2>{title}</h2>
-            <div className="line"></div>
+            <motion.h2 variants={fadeAnimation}>{title}</motion.h2>
+            <motion.div variants={lineAnimation} className="line"></motion.div>
             <Link to={url}>
-                <img src={cover} alt={title} />
+                <div style={{overflow: "hidden"}}>
+                    <motion.img variants={photoAnimation} src={cover} alt={title} />
+                </div>
             </Link>
         </StyledMovie>
     ); 
@@ -22,7 +27,7 @@ const StyledMovie = styled.div`
 
     .line {
         height: 0.5rem;
-        background: #cccccc;
+        background: #23dd97;
         margin-bottom: 3rem;
     }
 
