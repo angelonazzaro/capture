@@ -33,11 +33,11 @@ function Nav() {
           />
         </li>
         <li>
-          <Link to="/contact">3. Contact Us</Link>
+          <Link to="/contactus">3. Contact Us</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/contactus" ? "50%" : "0%" }}
           />
         </li>
       </ul>
