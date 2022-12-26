@@ -3,6 +3,7 @@ import Movie from '../components/Movie';
 
 import { motion } from "framer-motion";
 import { pageAnimation, sliderContainer, sliderAnimation } from "../animation";
+import { ScrollTop } from '../components/Scroll';
 
 function OurWork({movies}) { 
     return (
@@ -14,6 +15,7 @@ function OurWork({movies}) {
                 <Frame4 variants={sliderAnimation} />
             </motion.div>
             {movies.map((movie) => <Movie key={movie.url} title={movie.title} cover={movie.mainImg} url={movie.url} />)}
+            <ScrollTop />
         </Work>
     );
 }

@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import { ScrollTop } from '../components/Scroll';
 
 function MovieDetails({movies}) {
 
@@ -31,6 +32,7 @@ function MovieDetails({movies}) {
                     <Image>
                         <img src={movie.secondaryImg} alt={movie.title} />
                     </Image>
+                    <ScrollTop />
                 </StyledMovieDetails>
             )}
         </>

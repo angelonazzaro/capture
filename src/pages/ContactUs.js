@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnimation } from "../animation";
 import styled from "styled-components";
+import { ScrollTop } from "../components/Scroll";
 
 const ContactUs = () => {
   return (

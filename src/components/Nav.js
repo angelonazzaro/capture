@@ -20,6 +20,10 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     align-items: center;
 
+    position: sticky;
+    top: 0;
+    z-index: 10; 
+
     margin: auto;
 
     padding: 1rem 10rem;
