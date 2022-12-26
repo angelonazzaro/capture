@@ -18,7 +18,7 @@ This is **my personal** implementation with some added features.
 
 ## Demo 
 
-https://user-images.githubusercontent.com/58223071/209438973-e2c40609-1166-4b27-af2c-04bb4f501fc2.mp4
+https://user-images.githubusercontent.com/58223071/209538885-9160c294-ed94-475b-a49a-2760edc0be13.mp4
 
 
 ## How to Install
@@ -45,8 +45,7 @@ git clone https://github.com/sl1mSha4dey/capture.git
 <br />
 The other way is to click on the green button in the top right corner and go to <b>Download ZIP</b> and extract it on your machine. 
 
-<img width="913" alt="Screenshot 2022-12-24 alle 14 56 50" src="https://user-images.githubusercontent.com/58223071/209439016-de7f7ba9-b835-45f8-9b2e-4136a51f8ca3.png" />
-
+<img width="913" alt="Screenshot 2022-12-26 alle 11 22 32" src="https://user-images.githubusercontent.com/58223071/209537889-fd351df1-07b9-445a-a833-82810555bb29.png">
 
 ### Start the application 
 Once you have the repository on your machine, navigate with your terminal to the folder where you have cloned or extracted it: 
