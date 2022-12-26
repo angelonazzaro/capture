@@ -5,12 +5,16 @@ import { Layout } from '../styles';
 import { FAQState } from '../data';
 import FAQ from './FAQ';
 
+import { useScroll } from './Scroll';
+import { fadeAnimation } from '../animation';
+
 function FAQSection() {
 
+    const [element, controls] = useScroll();
     const [faqState, setFaqState] = useState(FAQState());
 
     return (
-        <Faq>
+        <Faq variants={fadeAnimation} ref={element} animate={controls}>
             <h2>Any Questions <span>FAQ</span></h2>
             {faqState.map((faq) => <FAQ key={faq.id} faq={faq} faqState={faqState} setFaqState={setFaqState} />)}
         </Faq>

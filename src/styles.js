@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 // Styled Components -> styled.DOMElement you want to style`{style}`
 // To use this, you just substitute the DOM element you want to style with the Styled Components
-export const Layout = styled.div`
+export const Layout = styled(motion.div)`
     min-height: 90vh;
 
     display: flex; 
