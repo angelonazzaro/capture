@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+<div align="center">
+    <h1>Capture</h1>
+    <br>
+    <p align="center">
+        <img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=for-the-badge" />
+        <img src="https://img.shields.io/github/languages/top/sl1mSha4dey/capture?style=for-the-badge" />
+    </p>
+    <p align="center">
+        <img src="https://img.shields.io/github/contributors/sl1mSha4dey/capture?color=brightgreen&style=for-the-badge" />
+    </p>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Introduction 
+Capture is a mobile friendly website portfolio fully animated built with `React`. <br>
+You may have seen other repositories with similar name, code and structure since the original idea behind this project comes from [DevEd](https://www.youtube.com/@developedbyed)'s React Course. 
+<br>
+This is **my personal** implementation with some added features. 
 
-## Available Scripts
+## Demo 
 
-In the project directory, you can run:
+https://user-images.githubusercontent.com/58223071/209438973-e2c40609-1166-4b27-af2c-04bb4f501fc2.mp4
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to Install
+In order to install and use Waves you'll have to:
+- Install `NodeJS` on your machine 
+- Clone this repository
+- Start the application 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Install NodeJS on your machine
+There are different ways to install `NodeJS`, but the simplest way is to navigate to the official [site](https://nodejs.org/en/) and download the LTS version. 
 
-### `npm test`
+<img width="1512" alt="Screenshot 2022-12-24 alle 14 41 13" src="https://user-images.githubusercontent.com/58223071/209438525-3632e5d7-2273-4ef7-84dd-c330e4d9f10c.png" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once you have downloaded and installed NodeJS you can check if the installation was successful by running `node -v` in your terminal. If NodeJS has been successfully installed on your machine you should see something like this: 
 
-### `npm run build`
+![65F8F7FF-82FC-401D-B474-5DAC9397EDDE_4_5005_c](https://user-images.githubusercontent.com/58223071/209438692-27e5295f-8e2a-4175-97fd-fc57472d8b35.jpeg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Clone this Repository
+In order to copy this repository you can go two ways. <br> 
+The first way is to use clone the repo via `git`. Open git bash or your terminal if you are on a Unix-based system and type: 
+```
+git clone https://github.com/sl1mSha4dey/capture.git
+```
+<br />
+The other way is to click on the green button in the top right corner and go to <b>Download ZIP</b> and extract it on your machine. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="913" alt="Screenshot 2022-12-24 alle 14 56 50" src="https://user-images.githubusercontent.com/58223071/209439016-de7f7ba9-b835-45f8-9b2e-4136a51f8ca3.png" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Start the application 
+Once you have the repository on your machine, navigate with your terminal to the folder where you have cloned or extracted it: 
+```
+cd repository-folder
+```
+Once you are on the directory, by the `dir` or `ls` command you should get this output: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img width="299" alt="Screenshot 2022-12-24 alle 14 47 28" src="https://user-images.githubusercontent.com/58223071/209438735-359d8c81-8942-4d3c-8a89-797a668d3915.png">
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Now proceed to install all the packages needed to run the project by running the following command: 
+```
+npm install 
+```
+Once the process has terminated, you can run the application by running: 
+```
+npm start
+```
+Your application will be available at https://localhost:3000. ENJOY!!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## References
+If you would like to view the original implementation, you can find it [here](https://github.com/developedbyed/the-creative-react-course-capture). 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
+If you would like to contribute, please: <br>
+ - Fork this repository: https://github.com/sl1mSha4dey/capture/fork 
+ - Create your feature branch: `git checkout -b MY-NEW-FEATURE`
+ - Commit your changes: `git commit -m 'Add my feature'`
+ - Push to the branch: `git push -u origin MY-NEW-FEATURE`
+ - Submit a pull request to explain what you did
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ If you do not know how to code in React, but you have some idea that you'd like to add to the project, please open an issue where we can discuss it.
